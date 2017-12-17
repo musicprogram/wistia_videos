@@ -17,6 +17,12 @@
           </div>
          
           <div class="card-content white-text">
+            <button class="btn btn-primary" onclick="setPlaySpeed(0.75)">0.75x</button>
+            <button class="btn btn-primary" onclick="setPlaySpeed(1)">1x</button>
+            <button class="btn btn-primary" onclick="setPlaySpeed(1.25)">1.25x</button>
+            <button class="btn btn-primary" onclick="setPlaySpeed(1.5)">1.5x</button>
+            <button class="btn btn-primary" onclick="setPlaySpeed(2)">2x</button>
+            <br/> 
             <span class="card-title"><%= @video.title %></span>
             <p><%= @video.description %></p>
           </div>
@@ -45,3 +51,4 @@
     wistiaEmbed.playbackRate(speed);
   }
 </script>
+
